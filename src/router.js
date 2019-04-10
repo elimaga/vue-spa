@@ -10,7 +10,7 @@ const router = new VueRouter({
     linkActiveClass: 'is-active',
     scrollBehavior: (to, from, savedPosition) => ({ y: 0 }),
     routes: [
-        { path: '/category/:id', component: Category },
+        { path: '/category/:id', name: 'category', component: Category },
         { path: '/login', component: Login },
         { path: '/', redirect: '/category/front-end' }
     ]
