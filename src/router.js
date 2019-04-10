@@ -4,6 +4,11 @@ import Category from './theme/Category.vue'
 import Login from './theme/Login.vue'
 import NotFound from './theme/NotFound.vue'
 
+/* This is how you do lazy loading when application grows in size */
+// const Category = () => System.import('./theme/Category.vue')
+// const Login = () => System.import('./theme/Login.vue')
+// const NotFound = () => System.import('./theme/NotFound.vue')
+
 Vue.use(VueRouter)
 
 const router = new VueRouter({
